@@ -28,6 +28,7 @@ export const News = () => {
           { articles }
         </ul>
         <Button title = 'Send' disabled />
+        <Button />
     </>
   )
 };
