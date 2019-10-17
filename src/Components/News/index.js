@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../../Assets/Button';
+import { List } from '../../Assets/List';
 
 const db = [
     {
@@ -29,6 +30,17 @@ export const News = () => {
         </ul>
         <Button title = 'Send' disabled type='test' />
         <Button type='test' />
+        <Button type='test'>Send</Button>
+        <ul>
+          <List>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </List>
+          <List>
+            Hi
+          </List>
+        </ul>
     </>
   )
 };
