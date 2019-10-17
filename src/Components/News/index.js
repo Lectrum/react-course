@@ -27,7 +27,7 @@ export const News = () => {
         <ul>
           { articles }
         </ul>
-        <Button />
+        <Button title = 'Send' disabled />
     </>
   )
 };

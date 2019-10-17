@@ -2,15 +2,13 @@ import React from 'react';
 import './styles.scss';
 import cx from 'classnames';
 
-const isButtonDisabled = () => false;
-
-export const Button = () => {
+export const Button = ({ disabled, title }) => {
   const customClassNames = cx({
     btn: true,
-    disabled: isButtonDisabled()
+    disabled: disabled
   });
 
   return (
-    <button className={ customClassNames }>Click me!</button>
+    <button className={ customClassNames }>{title}</button>
   )
 };
