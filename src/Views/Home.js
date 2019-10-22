@@ -1,11 +1,11 @@
 import React from 'react';
-import { ExampleLocalStorage } from '../Components/ExampleLocalStorage';
+import { ExampleMemo } from '../Components/ExampleMemo';
 
 export const Home = () => {
   return (
     <>
         <h1>Home</h1>
-        <ExampleLocalStorage />
+        <ExampleMemo />
     </>
   )
 };
