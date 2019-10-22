@@ -1,12 +1,12 @@
 import React, { useState, memo } from 'react';
 
-const DefaultChild = ({ title }) => {
-    console.log('default child', title);
+// const DefaultChild = ({ title }) => {
+//     console.log('default child', title);
 
-    return (
-        <span>Hi</span>
-    );
-};
+//     return (
+//         <span>Hi</span>
+//     );
+// };
 
 const Child = memo(({ title }) => {
     console.log('Improved child', title);
@@ -28,7 +28,7 @@ export const ExampleMemo = () => {
 
     return (
         <>
-            <DefaultChild title={ val } />
+            <Child title={ val } />
             <p onClick={ () => setA(a + 1) }>A { a }</p>
             <p onClick={ () => setB(b + 1) }>B { b }</p>
             <p onClick={ () => setVal(val + 1) }>Val</p>
