@@ -1,11 +1,11 @@
 import React from 'react';
-import { Profile } from '../Components/Profile';
+import { ExampleLocalStorage } from '../Components/ExampleLocalStorage';
 
 export const Home = () => {
   return (
     <>
         <h1>Home</h1>
-        <Profile />
+        <ExampleLocalStorage />
     </>
   )
 };
