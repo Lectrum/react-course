@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button } from '../../Assets/Button';
 import { List } from '../../Assets/List';
+import { useParams, useHistory, useLocation } from 'react-router-dom';
+// import { history } from '../../navigation/history';
+import { book } from '../../navigation/book';
 
 const db = [
     {
@@ -17,7 +20,24 @@ const db = [
     }
 ]
 
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+};
+
 export const News = () => {
+  const history = useHistory();
+  const { id } = useParams();
+
+  if (Number(id) === 666) {
+    history.push(book.root);
+  }
+
+  const location = useLocation();
+  console.log(location);
+
+  const query = useQuery();
+  console.log(query.get('name'));
+
   const articles = db.map(({title, id}) => (
     <li key={ id }>{title}</li>
   ));
@@ -25,6 +45,7 @@ export const News = () => {
   return (
     <>
         <h2>News</h2>
+        <h3>ID: { id }</h3>
         <ul>
           { articles }
         </ul>
