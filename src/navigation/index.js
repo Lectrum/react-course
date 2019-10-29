@@ -1,19 +1,15 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import { Header } from '../Components/Header';
 import { Parent } from '../Components/Parent';
 import { Profile } from '../Components/Profile';
 import { News } from '../Components/News';
 import { Unknown } from '../Components/Unknown';
 import { book } from './book';
+import { Customer } from '../Components/Customer';
 
 export const Routes = () => (
     <>
-        <Route
-            component = { Header }
-            path = { book.root }
-        />
         <Switch>
             <Route
                 exact
@@ -29,6 +25,11 @@ export const Routes = () => (
                 exact
                 component = { News }
                 path = { book.news }
+            />
+            <Route
+                exact
+                component = { Customer }
+                path = { book.customer }
             />
             <Route
                 exact
