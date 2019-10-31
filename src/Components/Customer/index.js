@@ -48,7 +48,7 @@ export const Customer = () => {
         onSubmit={ submitForm }
         validationSchema={ customerSchema }
       >
-      {({errors, touched) => {
+      {({errors, touched}) => {
         return (
           <Form>
             <MyTextInput
