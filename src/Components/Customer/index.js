@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, useField, Field } from 'formik';
+import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import './styles.scss';
 import { MyTextInput } from './inputs/myTextInput';

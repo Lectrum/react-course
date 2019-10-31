@@ -3,5 +3,6 @@ export const book = Object.freeze({
     news: '/news/:id',
     profile: '/profile',
     unknown: '/unknown',
-    customer: '/customer'
+    customer: '/customer',
+    user: '/user'
 });

@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { Parent } from '../Components/Parent';
 import { Profile } from '../Components/Profile';
 import { News } from '../Components/News';
+import { User } from '../Components/User';
 import { Unknown } from '../Components/Unknown';
 import { book } from './book';
 import { Customer } from '../Components/Customer';
@@ -30,6 +31,11 @@ export const Routes = () => (
                 exact
                 component = { Customer }
                 path = { book.customer }
+            />
+            <Route
+                exact
+                component = { User }
+                path = { book.user }
             />
             <Route
                 exact

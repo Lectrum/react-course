@@ -4,7 +4,6 @@ import { createLogger } from 'redux-logger';
 export const logger = createLogger({
     duration: true,
     collapsed: true,
-    collapsed: true,
     colors: {
         title: (action) => {
             return action.error ? 'firebrick' : 'deepskyblue';
