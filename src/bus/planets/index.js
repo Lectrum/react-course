@@ -1,5 +1,6 @@
 import React from 'react';
 import { usePlanetsFetch } from './hooks/usePlanetsFetch';
+import { Title } from '../../components/title';
 
 export const Planets = () => {
   const { isFetching, data, error } = usePlanetsFetch();
@@ -18,7 +19,7 @@ export const Planets = () => {
 
   return (
     <>
-      <h1>Planets</h1>
+      <Title>Planets</Title>
       {errorMessage}
       {loader}
       {list}

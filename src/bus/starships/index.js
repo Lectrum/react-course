@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStarshipsFetch } from './hooks/useStarshipsFetch';
+import { Title } from '../../components/title';
 
 export const Starships = () => {
   const { isFetching, data, error } = useStarshipsFetch();
@@ -18,7 +19,7 @@ export const Starships = () => {
 
   return (
     <>
-      <h1>Starships</h1>
+      <Title>Starships</Title>
       {errorMessage}
       {loader}
       {list}

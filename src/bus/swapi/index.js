@@ -1,6 +1,6 @@
 import React from 'react';
-import { Starships } from '../Starships';
-import { Planets } from '../Planets';
+import { Starships } from '../starships';
+import { Planets } from '../planets';
 import { useLoading } from './hooks/useLoading';
 
 export const Swapi = () => {

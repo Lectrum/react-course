@@ -8,9 +8,9 @@ import { User } from '../Components/User';
 import { Unknown } from '../Components/Unknown';
 import { book } from './book';
 import { Customer } from '../Components/Customer';
-import { Starships } from '../Components/Starships';
-import { Planets } from '../Components/Planets';
-import { Swapi } from '../Components/Swapi';
+import { Starships } from '../bus/starships';
+import { Planets } from '../bus/planets';
+import { Swapi } from '../bus/swapi';
 
 export const Routes = () => (
     <>

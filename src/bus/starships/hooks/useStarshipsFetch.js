@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { starshipsActions } from '../../../bus/starships/actions';
+import { starshipsActions } from '../actions';
 
 export const useStarshipsFetch = () => {
   const dispatch = useDispatch();
