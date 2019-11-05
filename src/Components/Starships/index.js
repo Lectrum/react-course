@@ -1,16 +1,8 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-
-import { starshipsActions } from '../../bus/starships/actions';
+import React from 'react';
+import { useStarshipsFetch } from './hooks/useStarshipsFetch';
 
 export const Starships = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(starshipsActions.fetchAsync());
-  }, [dispatch])
-
-  const { data, isFetching } = useSelector((state) => state.starships);
+  const { isFetching, data } = useStarshipsFetch();
 
   const loader = isFetching && (
     <p>Loading data from API...</p>
