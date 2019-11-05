@@ -6,5 +6,6 @@ export const book = Object.freeze({
     customer: '/customer',
     user: '/user',
     starships: '/starships',
-    planets: '/planets'
+    planets: '/planets',
+    swapi: '/swapi'
 });

@@ -10,6 +10,7 @@ import { book } from './book';
 import { Customer } from '../Components/Customer';
 import { Starships } from '../Components/Starships';
 import { Planets } from '../Components/Planets';
+import { Swapi } from '../Components/Swapi';
 
 export const Routes = () => (
     <>
@@ -48,6 +49,11 @@ export const Routes = () => (
                 exact
                 component = { Planets }
                 path = { book.planets }
+            />
+            <Route
+                exact
+                component = { Swapi }
+                path = { book.swapi }
             />
             <Route
                 exact
