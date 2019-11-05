@@ -8,6 +8,7 @@ import { User } from '../Components/User';
 import { Unknown } from '../Components/Unknown';
 import { book } from './book';
 import { Customer } from '../Components/Customer';
+import { Starships } from '../Components/Starships';
 
 export const Routes = () => (
     <>
@@ -36,6 +37,11 @@ export const Routes = () => (
                 exact
                 component = { User }
                 path = { book.user }
+            />
+            <Route
+                exact
+                component = { Starships }
+                path = { book.starships }
             />
             <Route
                 exact

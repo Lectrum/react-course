@@ -4,5 +4,6 @@ export const book = Object.freeze({
     profile: '/profile',
     unknown: '/unknown',
     customer: '/customer',
-    user: '/user'
+    user: '/user',
+    starships: '/starships'
 });
