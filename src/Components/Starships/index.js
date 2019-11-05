@@ -2,7 +2,11 @@ import React from 'react';
 import { useStarshipsFetch } from './hooks/useStarshipsFetch';
 
 export const Starships = () => {
-  const { isFetching, data } = useStarshipsFetch();
+  const { isFetching, data, error } = useStarshipsFetch();
+
+  const errorMessage = error.status === 404 && (
+    <p>Not found!</p>
+  );
 
   const loader = isFetching && (
     <p>Loading data from API...</p>
@@ -15,6 +19,7 @@ export const Starships = () => {
   return (
     <>
       <h1>Starships</h1>
+      {errorMessage}
       {loader}
       {list}
     </>
