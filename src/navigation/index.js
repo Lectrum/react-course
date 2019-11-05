@@ -1,13 +1,12 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-
-import { Parent } from '../Components/Parent';
-import { Profile } from '../Components/Profile';
-import { News } from '../Components/News';
-import { User } from '../Components/User';
-import { Unknown } from '../Components/Unknown';
+// Routes
 import { book } from './book';
-import { Customer } from '../Components/Customer';
+
+// Layouts
+import * as Views from '../views';
+
+// Domains
 import { Starships } from '../bus/starships';
 import { Planets } from '../bus/planets';
 import { Swapi } from '../bus/swapi';
@@ -15,52 +14,21 @@ import { Swapi } from '../bus/swapi';
 export const Routes = () => (
     <>
         <Switch>
-            <Route
-                exact
-                component = { Parent }
-                path = { book.root }
-            />
-            <Route
-                exact
-                component = { Profile }
-                path = { book.profile }
-            />
-            <Route
-                exact
-                component = { News }
-                path = { book.news }
-            />
-            <Route
-                exact
-                component = { Customer }
-                path = { book.customer }
-            />
-            <Route
-                exact
-                component = { User }
-                path = { book.user }
-            />
-            <Route
-                exact
-                component = { Starships }
-                path = { book.starships }
-            />
-            <Route
-                exact
-                component = { Planets }
-                path = { book.planets }
-            />
-            <Route
-                exact
-                component = { Swapi }
-                path = { book.swapi }
-            />
-            <Route
-                exact
-                component = { Unknown }
-                path = { book.unknown }
-            />
-            <Redirect to = { book.unknown } />
+            <Route exact path = { book.starships }>
+                <Views.Facade>
+                    <Starships />
+                </Views.Facade>
+            </Route>
+            <Route exact path = { book.planets }>
+                <Views.Facade>
+                    <Planets />
+                </Views.Facade>
+            </Route>
+            <Route exact path = { book.swapi }>
+                <Views.Facade>
+                    <Swapi />
+                </Views.Facade>
+            </Route>
         </Switch>
     </>
 )
