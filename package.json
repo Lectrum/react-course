@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "jest": "^24.9.0",
     "redux-logger": "^3.0.6"
   }
 }
