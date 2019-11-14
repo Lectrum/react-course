@@ -7,7 +7,7 @@ export const starshipsActions = Object.freeze({
     // Sync
     startFetching: () => {
         return {
-            type: types.STARSHIPS_START_FETCHING,
+            type: types.STARSHIPS_START_FETCHING
         }
     },
     stopFetching: () => {
