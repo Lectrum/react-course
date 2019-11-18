@@ -17,8 +17,8 @@ export const planetsReducer = ( state = initialState, { type, payload } ) => {
             return { ...state, error: payload };
         case types.PLANETS_FILL:
             return { ...state, data: payload };
-    
+
         default:
             return state;
     }
-}
+};

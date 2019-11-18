@@ -17,8 +17,8 @@ export const starshipsReducer = ( state = initialState, { type, payload } ) => {
             return { ...state, error: payload };
         case types.STARSHIPS_FILL:
             return { ...state, data: payload };
-    
+
         default:
             return state;
     }
-}
+};

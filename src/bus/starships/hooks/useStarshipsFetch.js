@@ -8,7 +8,7 @@ export const useStarshipsFetch = () => {
 
   useEffect(() => {
     dispatch(starshipsActions.fetchAsync());
-  },[dispatch])
+  },[dispatch]);
 
   const { data, isFetching, error } = useSelector((state) => state.starships);
 

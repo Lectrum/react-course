@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStarshipsFetch } from './hooks/useStarshipsFetch';
-import { Title } from '../../components/title';
+import { Title } from '../../common/title';
 
 export const Starships = () => {
   const { isFetching, data, error } = useStarshipsFetch();

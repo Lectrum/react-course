@@ -1,6 +1,6 @@
 import React from 'react';
 import { usePlanetsFetch } from './hooks/usePlanetsFetch';
-import { Title } from '../../components/title';
+import { Title } from '../../common/title';
 
 export const Planets = () => {
   const { isFetching, data, error } = usePlanetsFetch();

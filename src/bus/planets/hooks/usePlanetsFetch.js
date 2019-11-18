@@ -8,7 +8,7 @@ export const usePlanetsFetch = () => {
 
   useEffect(() => {
     dispatch(planetsActions.fetchAsync());
-  },[dispatch])
+  },[dispatch]);
 
   const { data, isFetching, error } = useSelector((state) => state.planets);
 

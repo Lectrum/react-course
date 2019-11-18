@@ -31,4 +31,4 @@ export const Routes = () => (
             </Route>
         </Switch>
     </>
-)
+);
